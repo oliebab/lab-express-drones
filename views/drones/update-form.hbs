@@ -1,1 +1,14 @@
 <h2>Update the drone</h2>
+
+<form method="post" action="/drones/{{drone._id}}/edit">
+    <p><label for="">Edit the Drone Name</label>
+        <input type="text" name="name" placeholder="{{drone.name}}">
+    </p>
+    <p><label for="">Edit the Number of Propellers</label>
+        <input type="number" name="propellers" placeholder="{{drone.propellers}}">
+    </p>
+    <p><label for="">Edit the Maximum Drone Speed</label>
+        <input type="number" name="maxSpeed" placeholder="{{drone.maxSpeed}}">
+    </p>
+    <input type="submit" value="ok">
+</form>

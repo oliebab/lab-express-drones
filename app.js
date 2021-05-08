@@ -15,6 +15,7 @@ const debug = require('debug')(
 );
 
 const app = express();
+// const PORT = 6000;
 
 // require database configuration
 require('./configs/db.config');
@@ -40,5 +41,7 @@ app.use('/', index);
 
 const droneRoutes = require('./routes/drones');
 app.use('/', droneRoutes);
+
+// app.listen(PORT);
 
 module.exports = app;
